@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #efefef;
+}
+
+.site-header {
+  padding: 20px;
+  font-family: 'Outfit';
+  border: 1px solid rgba(0, 0, 0, 0.301);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.404);
+}
+
+.title {
+  font-weight: 400;
+}
