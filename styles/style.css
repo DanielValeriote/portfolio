@@ -47,6 +47,10 @@ body {
   position: relative;
 }
 
+#nightModeSwitch:hover {
+  cursor: pointer;
+}
+
 #nightModeSwitch:checked {
   background-color: #03a9f4;
 }
@@ -73,5 +77,11 @@ body {
           transform: scale(1.1);
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-section {
+  background-color: #023e8a;
+  width: 100%;
+  height: 80vh;
 }
 /*# sourceMappingURL=style.css.map */
