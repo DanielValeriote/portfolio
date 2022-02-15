@@ -1,7 +1,15 @@
-$bg-color:rgb(37, 38, 42);
-$main-color: white;
-$secondary-color: black;
-$main-bg-color: #023e8a; 
+:root {
+  --bg-color: #001523;//rgb(37, 38, 42);
+  --main-color: #ffffff;
+  --secondary-color: black;
+  --third-color: rgb(221, 221, 221);
+  --main-bg-color: #002945;
+}
+
+// $bg-color: #001523;//rgb(37, 38, 42);
+// $main-color: white;
+// $secondary-color: black;
+// $main-bg-color: #002945; 
 
 * {
   margin: 0;
@@ -12,18 +20,16 @@ $main-bg-color: #023e8a;
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: $bg-color;
-  color: $main-color;
+  background-color: var(--bg-color);
+  color: var(--main-color);
 }
 
 .site-header {
   padding: 30px;
   font-family: 'Outfit';
-  // border: 1px solid rgba(0, 0, 0, 0.301);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.404);
 }
 
 .title {
@@ -35,7 +41,6 @@ body {
   width: 60px;
   height: 30px;
   appearance: none;
-  // background-color: #c6c6c6;
   background-color: dimgray;
   outline: none;
   border-radius: 12px;
@@ -72,7 +77,27 @@ body {
 }
 
 .main-section {
-  background-color: $main-bg-color;
   width: 100%;
   height: 80vh;
+  background-color: var(--main-bg-color);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.397);
+  padding: 30px;
+  padding-top: 70px;
+  & h2 {
+    font-size: 1.8rem;
+  }
+
+  & h2, h3 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin: 10px;
+  }
+  & h3 {
+    font-size: 1.3rem;
+    color: var(--third-color);
+    text-shadow: 0px 0px 4px var(--third-color);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
 }
