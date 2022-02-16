@@ -4,6 +4,9 @@
   --secondary-color: black;
   --third-color: rgb(221, 221, 221);
   --main-bg-color: #002945;
+  --highlited-color: #3daffc;
+  --highlited-color-2: cyan;
+  --card-bg-color: #00406c;
 }
 
 * {
@@ -15,7 +18,7 @@
 
 body {
   width: 100%;
-  min-height: 200vh;
+  min-height: 300vh;
   background-color: var(--bg-color);
   color: var(--main-color);
 }
@@ -117,7 +120,7 @@ body {
   font-weight: 500;
   font-size: 1.3rem;
   color: var(--third-color);
-  text-shadow: 0px 0px 4px var(--third-color);
+  text-shadow: 0px 0px 3px var(--third-color);
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -158,8 +161,91 @@ body {
 }
 
 .main-section {
-  padding: 25px;
-  padding-top: 80px;
+  font-family: 'Outfit';
+}
+
+.main-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: lighter;
+  color: var(--highlited-color);
+}
+
+.about-section {
+  padding: 80px 25px;
+}
+
+.about-section p {
+  margin-top: 40px;
+  letter-spacing: 1.5px;
+  line-height: 200%;
+  font-size: 1.1rem;
+}
+
+.technologies-section h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.highlited-2 {
+  color: cyan;
+  text-decoration: underline;
+}
+
+.underline {
+  display: block;
+  width: 50%;
+  height: 4px;
+  background: var(--highlited-color-2);
+  margin: 20px auto;
+  border-radius: 4px;
+}
+
+.technologies-list {
+  list-style: none;
+  margin: 60px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 50px;
+}
+
+.card-item {
+  min-width: 200px;
+  max-width: 300px;
+  background-color: var(--card-bg-color);
+  -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.842);
+          box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.842);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: lighter;
+}
+
+.card-item img {
+  padding: 20px 10%;
+  max-width: 100%;
+}
+
+.card-item .card-title {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  border-top: 1px solid black;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px 0;
 }
 
 @-webkit-keyframes float-icon {
