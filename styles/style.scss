@@ -6,11 +6,6 @@
   --main-bg-color: #002945;
 }
 
-// $bg-color: #001523;//rgb(37, 38, 42);
-// $main-color: white;
-// $secondary-color: black;
-// $main-bg-color: #002945; 
-
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +20,7 @@ body {
 }
 
 .site-header {
-  padding: 30px;
+  padding: 22px;
   font-family: 'Outfit';
   display: flex;
   justify-content: space-between;
@@ -67,7 +62,6 @@ body {
     left: 0;
     width: 30px;
     height: 30px;
-    // border-radius: inherit;
     border-radius: 50%;
     background-color: #c6c6c6;
     transition: .5s;
@@ -76,7 +70,7 @@ body {
   }
 }
 
-.main-section {
+.intro-section {
   position: relative;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   width: 100%;
@@ -106,22 +100,39 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
   }
-  & .about-title {
+  & .about-pointer {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    bottom: 100px;
+    bottom: 180px;
     left: 50%;
-    margin: 0;
     transform: translateX(-50%);
-    font-weight: lighter;
-    font-size: 1.8rem;
-    text-transform: none;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    & .about-title {
+      font-weight: lighter;
+    }
 
-    &::after {
-      content: url("../images/down.svg");
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 100%;
+    & .float-icon {
+      animation:float-icon .8s cubic-bezier(.25,.46,.45,.94) infinite alternate both;
+      & polyline {
+      stroke: var(--main-color);
+    }
     }
   }
 } 
+
+.main-section {
+  padding: 25px;
+  padding-top: 80px;
+}
+
+@keyframes float-icon{
+  from {
+    transform:translateY(0);
+  }
+  to{
+    transform:translateY(20px);
+  }
+}
