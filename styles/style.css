@@ -24,6 +24,15 @@ body {
   color: var(--main-color);
 }
 
+.header-undeline {
+  display: block;
+  width: 250px;
+  background: var(--highlited-color);
+  height: 4px;
+  margin: 10px auto;
+  border-radius: 4px;
+}
+
 .site-header {
   padding: 22px;
   font-family: 'Outfit';
@@ -91,6 +100,15 @@ body {
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.underline {
+  display: block;
+  width: 100px;
+  background: var(--highlited-color);
+  height: 4px;
+  margin: 10px auto;
+  border-radius: 4px;
+}
+
 .intro-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,9 +118,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   width: 100%;
   height: 95vh;
@@ -114,7 +132,7 @@ body {
   -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.397);
           box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.397);
   padding: 30px;
-  padding-top: 90px;
+  padding-top: 30px;
 }
 
 .intro-section h2 {
@@ -213,15 +231,6 @@ body {
 .highlited-2 {
   color: cyan;
   text-decoration: underline;
-}
-
-.underline {
-  display: block;
-  width: 100px;
-  height: 4px;
-  background: var(--highlited-color-2);
-  margin: 10px auto;
-  border-radius: 4px;
 }
 
 .technologies-list {
