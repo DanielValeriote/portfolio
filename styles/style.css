@@ -19,7 +19,7 @@
 
 body {
   width: 100%;
-  min-height: 300vh;
+  min-height: 400vh;
   background-color: var(--bg-color);
   color: var(--main-color);
 }
@@ -286,20 +286,6 @@ body {
   display: none;
 }
 
-.card-item::before {
-  content: "";
-  background-color: var(--contrast-color);
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: transparent;
-  border: 15px solid;
-  border-right-color: rgba(255, 255, 255, 0.5);
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-}
-
 .card-item:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -324,6 +310,20 @@ body {
           animation: raise .1s forwards;
   border-radius: 10px 10px 0px 0px;
   text-align: center;
+}
+
+.detailed-card::before {
+  content: "";
+  background-color: var(--contrast-color);
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  border: 15px solid;
+  border-right-color: rgba(255, 255, 255, 0.5);
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: transparent;
+  border-left-color: transparent;
 }
 
 @media screen and (min-width: 545px) {

@@ -18,7 +18,7 @@
 
 body {
   width: 100%;
-  min-height: 300vh;
+  min-height: 400vh;
   background-color: var(--bg-color);
   color: var(--main-color);
 }
@@ -218,19 +218,6 @@ body {
   & .card-info {
     display: none;
   }
-  &::before {
-    content: "";
-    background-color: var(--contrast-color);
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: transparent;
-    border: 15px solid;
-    border-right-color: rgba(white, .5);
-    border-top-color: rgba(white, .5);
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
   &:hover {
     transform: scale(1.1);
     transition-duration: .4s;
@@ -251,6 +238,20 @@ body {
     }
   }
 }
+
+.detailed-card::before {
+    content: "";
+    background-color: var(--contrast-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: 15px solid;
+    border-right-color: rgba(white, .5);
+    border-top-color: rgba(white, .5);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
 
 @media screen and (min-width: 545px) {
     .about-section {
