@@ -24,6 +24,11 @@ body {
   color: var(--main-color);
 }
 
+a {
+  color: unset;
+  text-decoration: none;
+}
+
 .header-undeline {
   display: block;
   width: 250px;
@@ -50,6 +55,16 @@ body {
 .title {
   font-weight: 400;
   font-size: 1.5rem;
+}
+
+.center-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
 }
 
 #nightModeSwitch {
@@ -109,6 +124,15 @@ body {
   border-radius: 4px;
 }
 
+.red-underline {
+  display: block;
+  width: 80%;
+  background: #ffae00;
+  height: 4px;
+  margin: 10px auto;
+  border-radius: 4px;
+}
+
 .intro-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,17 +159,17 @@ body {
   padding-top: 30px;
 }
 
-.intro-section h2 {
+.intro-section h1 {
   font-size: 1.8rem;
   font-weight: bolder;
 }
 
-.intro-section h2, .intro-section h3 {
+.intro-section h1, .intro-section h2 {
   text-align: center;
   margin: 10px;
 }
 
-.intro-section h3 {
+.intro-section h2 {
   font-weight: 500;
   font-size: 1.3rem;
   color: var(--third-color);
@@ -177,12 +201,27 @@ body {
 }
 
 .intro-section .about-pointer .float-icon {
+  margin: 0px 12px;
   -webkit-animation: float-icon 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
           animation: float-icon 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
 }
 
 .intro-section .about-pointer .float-icon polyline {
   stroke: var(--main-color);
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  text-transform: uppercase;
+  color: var(--highlited-color);
 }
 
 .main-section {

@@ -20,27 +20,33 @@
 </head>
 <body>
   <header class="site-header">
-    <h1 class="title">Tema</h1>
+    <ul class="nav-links">
+      <li><a href="#">contato</a></li>
+      <li><a href="#">projetos</a></li>
+    </ul>
     <div class="center-checkbox">
+      <label for="nightModeSwitch">TEMA: </label>
       <input type="checkbox" id="nightModeSwitch">
     </div>
   </header>
   <section class="intro-section">
     <div class="intro-header">
-      <h3>Portfólio</h3>
-      <h2>Daniel Valeriote</h2>
-      <h3>Desenvolvedor Front-End Júnior</h3>
+      <h2>Portfólio</h2>
+      <h1>Daniel Valeriote</h1>
+      <h2>Desenvolvedor Front-End Júnior</h2>
       <div class="header-undeline"></div>
     </div>
   <div class="about-pointer">
-    <h3 class="about-title">Sobre</h3>
-      <svg class="float-icon" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <polyline fill="none" stroke="#000" stroke-width="2" points="7.086 3.174 17.086 13.174 7.086 23.174" transform="scale(1 -1) rotate(-89 -1.32 0)" />
-      </svg>
+    <a href="#about">
+      <h3 class="about-title">Sobre</h3>
+        <svg class="float-icon" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <polyline fill="none" stroke="#000" stroke-width="2" points="7.086 3.174 17.086 13.174 7.086 23.174" transform="scale(1 -1) rotate(-89 -1.32 0)" />
+        </svg>
+    </a>
   </div>
   </section>
   <main class="main-section">
-    <article class="about-section">
+    <article class="about-section" id="about">
       <h2>Sobre mim</h2>
       <p>Me chamo Daniel, e estou começando minha carreira como desenvolvedor, atualmente com foco em <span class="highlited-2">front-end</span>, abaixo estão as tecnologias que estou estudando, e as que pretendo aprender.</p>
     </article>
@@ -111,7 +117,7 @@
         </li>
       </ul>
     </div>
-    <hr>
+    <span class="red-underline"></span>
 
   </main>
 </body>

@@ -32,6 +32,11 @@ body {
   color: var(--main-color);
 }
 
+a {
+  color: unset;
+  text-decoration: none;
+}
+
 .header-undeline {
   @include underline($width: 250px)
 }
@@ -47,6 +52,12 @@ body {
 .title {
   font-weight: 400;
   font-size: 1.5rem;
+}
+
+.center-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 #nightModeSwitch {
@@ -91,6 +102,10 @@ body {
   @include underline();
 }
 
+.red-underline {
+  @include underline($color: rgb(255, 174, 0), $width: 80%);
+}
+
 .intro-section {
   display: flex;
   flex-direction: column;
@@ -107,16 +122,16 @@ body {
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.397);
   padding: 30px;
   padding-top: 30px;
-  & h2 {
+  & h1 {
     font-size: 1.8rem;
     font-weight: bolder;
   }
 
-  & h2, h3 {
+  & h1, h2 {
     text-align: center;
     margin: 10px;
   }
-  & h3 {
+  & h2 {
     font-weight: 500;
     font-size: 1.3rem;
     color: var(--third-color);
@@ -135,6 +150,10 @@ body {
       font-weight: lighter;
     }
     & .float-icon {
+      margin: 0px 12px;
+      // position: absolute;
+      // left: 50%;
+      // transform: translateX(90px);
       animation:float-icon .8s cubic-bezier(.25,.46,.45,.94) infinite alternate both;
       & polyline {
       stroke: var(--main-color);
@@ -142,6 +161,15 @@ body {
     }
   }
 } 
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  text-transform: uppercase;
+  color: var(--highlited-color);
+}
 
 
 .main-section {
