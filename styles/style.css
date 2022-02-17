@@ -7,6 +7,7 @@
   --highlited-color: #3daffc;
   --highlited-color-2: cyan;
   --card-bg-color: #00406c;
+  --contrast-color: white;
 }
 
 * {
@@ -103,7 +104,7 @@ body {
   -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.397);
           box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.397);
   padding: 30px;
-  padding-top: 70px;
+  padding-top: 90px;
 }
 
 .intro-section h2 {
@@ -134,7 +135,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  bottom: 180px;
+  bottom: 130px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -172,6 +173,20 @@ body {
 }
 
 .about-section {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 80px 25px;
 }
 
@@ -180,11 +195,13 @@ body {
   letter-spacing: 1.5px;
   line-height: 200%;
   font-size: 1.1rem;
+  text-align: center;
 }
 
 .technologies-section h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
+  padding: 0px 5px;
 }
 
 .highlited-2 {
@@ -194,28 +211,33 @@ body {
 
 .underline {
   display: block;
-  width: 50%;
+  width: 100px;
   height: 4px;
   background: var(--highlited-color-2);
-  margin: 20px auto;
+  margin: 10px auto;
   border-radius: 4px;
 }
 
 .technologies-list {
-  list-style: none;
-  margin: 60px 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  gap: 50px;
+  -ms-grid-columns: (minmax(180px, 200px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
+  list-style: none;
+  margin: 80px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 700px;
+  gap: 30px;
 }
 
 .card-item {
+  position: relative;
   min-width: 200px;
-  max-width: 300px;
+  max-width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.534);
+  border-radius: 15px;
   background-color: var(--card-bg-color);
   -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.842);
           box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.842);
@@ -232,20 +254,94 @@ body {
   font-weight: lighter;
 }
 
-.card-item img {
+.card-item .image-container {
+  height: 100%;
+}
+
+.card-item .image-container img {
   padding: 20px 10%;
   max-width: 100%;
+  height: 100%;
 }
 
 .card-item .card-title {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.432);
   border-top: 1px solid black;
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   padding: 10px 0;
+}
+
+.card-item .card-info {
+  display: none;
+}
+
+.card-item::before {
+  content: "";
+  background-color: var(--contrast-color);
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  border: 15px solid;
+  border-right-color: rgba(255, 255, 255, 0.5);
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.card-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+.card-item:hover::before {
+  opacity: 0;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.card-item:hover .card-info {
+  display: block;
+  position: absolute;
+  top: 0;
+  background-color: var(--main-bg-color);
+  width: 100%;
+  height: 20px;
+  -webkit-animation: raise .1s forwards;
+          animation: raise .1s forwards;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+}
+
+@media screen and (min-width: 545px) {
+  .about-section {
+    padding: 0px 20%;
+  }
+}
+
+@-webkit-keyframes raise {
+  from {
+    top: 0;
+  }
+  to {
+    top: -10px;
+  }
+}
+
+@keyframes raise {
+  from {
+    top: 0;
+  }
+  to {
+    top: -10px;
+  }
 }
 
 @-webkit-keyframes float-icon {
