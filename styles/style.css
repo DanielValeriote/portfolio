@@ -7,6 +7,7 @@
   --highlited-color: #3daffc;
   --highlited-color-2: cyan;
   --card-bg-color: #00406c;
+  --toggle-bg-color: #00406c;
   --contrast-color: white;
 }
 
@@ -265,6 +266,10 @@ a {
   text-align: center;
 }
 
+.technologies-section {
+  padding-top: 20px;
+}
+
 .technologies-section h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -378,10 +383,50 @@ a {
   border-left-color: transparent;
 }
 
+.shortcut-item {
+  display: none;
+}
+
 @media screen and (min-width: 545px) {
   .about-section {
     padding: 0px 20%;
   }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-item {
+    display: none;
+  }
+  .shortcut-item {
+    position: relative;
+    display: block;
+    font-size: 1.4rem;
+  }
+  .shortcut-item button {
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
+  }
+}
+
+#dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #efefef;
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  z-index: 1;
+  list-style: none;
+}
+
+.hidden {
+  display: none;
 }
 
 @-webkit-keyframes raise {

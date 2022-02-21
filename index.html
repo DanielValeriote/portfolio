@@ -21,8 +21,19 @@
 <body>
   <header class="site-header">
     <ul class="nav-links">
-      <li><a href="#technologies">Tecnologias</a></li>
-      <li><a href="#">Projetos</a></li>
+      <li class="nav-item"><a href="#technologies">Tecnologias</a></li>
+      <li class="nav-item"><a href="#">Projetos</a></li>
+      <li class="shortcut-item">
+        <button onclick="dropdownToggle()">
+          ☰
+        </button>
+        <ul id="dropdown" class="hidden">
+          <li>
+            <li class="nav-item"><a href="#technologies">Tecnologias</a></li>
+            <li class="nav-item"><a href="#projects">Projetos</a></li><li class="nav-item"><a href="#contact">Contato</a></li>
+          </li>
+        </ul>
+      </li>
     </ul>
     <div class="center-checkbox">
       <label for="nightModeSwitch">TEMA: </label>
@@ -121,4 +132,5 @@
 
   </main>
 </body>
+<script src="./script/script.js"></script>
 </html>
