@@ -22,17 +22,25 @@
   <header class="site-header">
     <ul class="nav-links">
       <li class="nav-item"><a href="#technologies">Tecnologias</a></li>
-      <li class="nav-item"><a href="#">Projetos</a></li>
+      <li class="nav-item"><a href="#projects">Projetos</a></li>
+      <li class="nav-item"><a href="#contact">Contato</a></li>
       <li class="shortcut-item">
-        <button onclick="dropdownToggle()">
+        <button id="dropdown-btn" onclick="dropdownToggle()">
           ☰
         </button>
-        <ul id="dropdown" class="hidden">
-          <li>
-            <li class="nav-item"><a href="#technologies">Tecnologias</a></li>
-            <li class="nav-item"><a href="#projects">Projetos</a></li><li class="nav-item"><a href="#contact">Contato</a></li>
-          </li>
-        </ul>
+        <div id="dropdown" class="hidden">
+          <ul id="dropdown-nav">
+            <a href="#technologies">
+              <li class="dropdown-link">Tecnologias</li>
+            </a>
+            <a href="#projects">
+              <li class="dropdown-link">Projetos</li>
+            </a>
+            <a href="#contact">
+              <li class="dropdown-link">Contato</li>
+            </a>
+          </ul>
+        </div>
       </li>
     </ul>
     <div class="center-checkbox">
