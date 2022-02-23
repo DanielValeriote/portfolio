@@ -3,6 +3,7 @@
   --main-color: #ffffff;
   --secondary-color: black;
   --third-color: rgb(221, 221, 221);
+  --fourth-color: rgb(255, 174, 0);
   --main-bg-color: #002945;
   --highlited-color: #3daffc;
   --highlited-color-2: cyan;
@@ -108,8 +109,8 @@ a {
   @include underline();
 }
 
-.red-underline {
-  @include underline($color: rgb(255, 174, 0), $width: 80%);
+.orange-underline {
+  @include underline($color: var(--fourth-color), $width: 80%);
 }
 
 .intro-section {
@@ -152,9 +153,6 @@ a {
     justify-content: center;
     padding: 50px 0px;
     gap: 0px;
-    & .about-title {
-      font-weight: lighter;
-    }
     & .float-icon {
       margin: 0px 12px;
       animation:float-icon .8s cubic-bezier(.25,.46,.45,.94) infinite alternate both;
@@ -297,30 +295,57 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 545px) {
-    .about-section {
-      padding: 0px 20%;
+.projects-section {
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    // align-items: center;
+    justify-content: center;    
+    & > * {
+      flex: 1 1 320px;
     }
-}
+  }
+  .project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--card-bg-color);
+    max-width: 400px;
+    
+  }
+  .projects-header {
+    margin: 50px auto;
+  }
+  .project-info {
+    background-color: var(--main-bg-color);
+    width: 100%;
+    // height: 40px;
+    padding: 20px;
+    font-weight: lighter;
+    & h5 {
+      font-family: "Open Sans";
+      font-weight: normal;
+      font-size: 1.1rem;
+    }
+  }
+  h2 {
+    color: var(--fourth-color);
+  }
+  & .project-image-container {
+      height: 100%;
+    
+    & img {
+      height: 100%;
+      max-width: 100%;
+    }
+  }
 
-@media screen and (max-width: 700px) {
-  .nav-item {
-    display: none;
-  }
-  .shortcut-item {
-    position: relative;
-    display: block;
-    font-size: 1.4rem;
-    & #dropdown-btn {
-      color: inherit;
-      background-color: inherit;
-      border: none;
-      font-size: inherit;
-      cursor: pointer;
-      position: relative;
-      overflow: visible;
-    }
-  }
 }
 
 #dropdown {
@@ -395,5 +420,35 @@ a {
   to{
     top: 110%;
     opacity: 100%;
+  }
+}
+
+@media screen and (min-width: 545px) {
+    .about-section {
+      padding: 0px 20%;
+    }
+
+    .project-image-container {
+      max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-item {
+    display: none;
+  }
+  .shortcut-item {
+    position: relative;
+    display: block;
+    font-size: 1.4rem;
+    & #dropdown-btn {
+      color: inherit;
+      background-color: inherit;
+      border: none;
+      font-size: inherit;
+      cursor: pointer;
+      position: relative;
+      overflow: visible;
+    }
   }
 }
