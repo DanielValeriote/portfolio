@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --bg-color: #001523;
   --main-color: #ffffff;
@@ -385,6 +386,10 @@ a {
   display: none;
 }
 
+.projects-section {
+  padding-top: 10px;
+}
+
 .projects-section .projects-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,7 +423,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-radius: 10px;
+  border-radius: 14px;
   overflow: hidden;
   text-align: center;
   background-color: var(--card-bg-color);
@@ -447,12 +452,27 @@ a {
 }
 
 .projects-section .project-image-container {
+  position: relative;
   height: 100%;
 }
 
 .projects-section .project-image-container img {
   height: 100%;
   max-width: 100%;
+}
+
+.project-link {
+  width: 23px;
+  height: 23px;
+  background-color: white;
+  border: 1px solid black;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.project-link::before {
+  content: "🔗";
 }
 
 #dropdown {
