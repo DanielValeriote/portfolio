@@ -7,10 +7,11 @@
   --main-bg-color: #002945;
   --highlited-color: #3daffc;
   --highlited-color-2: cyan;
-  --card-bg-color: #00406c;
+  --card-bg-color: #004370;
   --dropdown-bg-color: #015186;
   --dropdown-hover-color: #003e68;
   --contrast-color: white;
+  --footer-bg-color: #004370;
 }
 
 @mixin underline($color: var(--highlited-color), $width: 100px) {
@@ -110,7 +111,7 @@ a {
 }
 
 .orange-underline {
-  @include underline($color: var(--fourth-color), $width: 80%);
+  @include underline($color: var(--fourth-color), $width: 40%);
 }
 
 .intro-section {
@@ -249,7 +250,7 @@ a {
     font-weight: 400;
     text-align: center;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.432);
-    border-top: 1px solid black;
+    border-top: 1px solid rgba(0, 0, 0, 0.342);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
     padding: 10px 0;
   }
@@ -296,13 +297,12 @@ a {
 }
 
 .projects-section {
-  padding-top: 10px;
+  padding: 20px 0px 100px 0px;
   .projects-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    // align-items: center;
     justify-content: center;    
     & > * {
       flex: 1 1 320px;
@@ -323,10 +323,11 @@ a {
     margin: 50px auto;
   }
   .project-info {
-    background-color: var(--main-bg-color);
+    background-color: var(--card-bg-color);
     width: 100%;
     padding: 20px;
     font-weight: lighter;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.4);
     & h5 {
       font-family: "Open Sans";
       font-weight: normal;
@@ -359,6 +360,23 @@ a {
   } 
 }
 
+.contact-section {
+  background-color: var(--footer-bg-color);
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 10px;
+  & a {
+    cursor: pointer;
+  }
+  & svg {
+    margin-top: 10px;
+  }
+}
+
+#github-icon {
+  fill: white;
+}
+
 #dropdown {
   position: absolute;
   top: 110%;
@@ -367,7 +385,7 @@ a {
   height: 100px;
   background-color: var(--dropdown-bg-color);
   border: 1px solid black;
-  border-radius: 0px 10px 10px 10px ;
+  border-radius: 10px;
   color: white;
   animation: slide-down .5s forwards;
   z-index: 3;
