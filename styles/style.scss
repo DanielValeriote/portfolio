@@ -81,7 +81,7 @@ a {
     cursor: pointer;
   }
   &:checked {
-    background-color: #03a9f4;
+    background-color: var(--highlited-color);
     &:before {
       left: 30px;
       background-color: yellow;
@@ -100,7 +100,7 @@ a {
     background-color: #c6c6c6;
     transition: .5s;
     transform: scale(1.1);
-    box-shadow: 0px 2px 5px rgba(0,0,0,.2);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
   }
 }
 
@@ -125,7 +125,7 @@ a {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.397);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
   padding: 30px;
   padding-top: 30px;
   & .intro-h1 {
@@ -249,7 +249,7 @@ a {
     text-align: center;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.432);
     border-top: 1px solid rgba(0, 0, 0, 0.342);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
     padding: 10px 0;
   }
   & .card-info {
@@ -325,7 +325,7 @@ a {
     width: 100%;
     padding: 20px;
     font-weight: lighter;
-    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
     & h5 {
       font-family: "Open Sans";
       font-weight: normal;
@@ -363,6 +363,7 @@ a {
   text-align: center;
   font-size: 1.1rem;
   padding: 10px;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
   & a {
     cursor: pointer;
   }
