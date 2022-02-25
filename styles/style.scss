@@ -1,12 +1,10 @@
 :root {
   --bg-color: #001523;
   --main-color: #ffffff;
-  --secondary-color: black;
   --third-color: rgb(221, 221, 221);
   --fourth-color: rgb(255, 174, 0);
   --main-bg-color: #002945;
   --highlited-color: #3daffc;
-  --highlited-color-2: cyan;
   --card-bg-color: #004370;
   --dropdown-bg-color: #015186;
   --dropdown-hover-color: #003e68;
@@ -130,16 +128,16 @@ a {
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.397);
   padding: 30px;
   padding-top: 30px;
-  & h1 {
+  & .intro-h1 {
     font-size: 1.8rem;
     font-weight: bolder;
   }
 
-  & h1, h2 {
+  & .intro-h1, .intro-h2 {
     text-align: center;
     margin: 10px;
   }
-  & h2 {
+  & .intro-h2 {
     font-weight: 500;
     font-size: 1.3rem;
     color: var(--third-color);
@@ -456,7 +454,6 @@ a {
     .about-section {
       padding: 0px 20%;
     }
-
     .project-image-container {
       max-width: 100%;
     }
