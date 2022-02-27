@@ -146,17 +146,22 @@ a {
     text-transform: uppercase;
   }
   & .about-pointer {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 50px 0px;
     gap: 0px;
-    & .float-icon {
-      margin: 0px 12px;
-      animation:float-icon .8s cubic-bezier(.25,.46,.45,.94) infinite alternate both;
-      & polyline {
-      stroke: var(--main-color);
+    & .float-icon-container {
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      & .float-icon {
+        animation:float-icon .8s cubic-bezier(.25,.46,.45,.94) infinite alternate both;
+        & polyline {
+        stroke: var(--main-color);
+      }
     }
     }
   }
@@ -446,7 +451,7 @@ a {
     opacity: 0%;
   }
   to{
-    top: 110%;
+    top: 100%;
     opacity: 100%;
   }
 }

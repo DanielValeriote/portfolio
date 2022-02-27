@@ -186,6 +186,7 @@ a {
 }
 
 .intro-section .about-pointer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,13 +204,19 @@ a {
   gap: 0px;
 }
 
-.intro-section .about-pointer .float-icon {
-  margin: 0px 12px;
+.intro-section .about-pointer .float-icon-container {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+}
+
+.intro-section .about-pointer .float-icon-container .float-icon {
   -webkit-animation: float-icon 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
           animation: float-icon 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
 }
 
-.intro-section .about-pointer .float-icon polyline {
+.intro-section .about-pointer .float-icon-container .float-icon polyline {
   stroke: var(--main-color);
 }
 
@@ -605,7 +612,7 @@ a {
     opacity: 0%;
   }
   to {
-    top: 110%;
+    top: 100%;
     opacity: 100%;
   }
 }
@@ -616,7 +623,7 @@ a {
     opacity: 0%;
   }
   to {
-    top: 110%;
+    top: 100%;
     opacity: 100%;
   }
 }
