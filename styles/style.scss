@@ -271,7 +271,7 @@ a {
     display: none;
   }
   &:hover {
-    transform: scale(1.02) translateY(-10px);
+    transform: translateY(-10px);
     transition-duration: .4s;
   &::before {
       opacity: 0;

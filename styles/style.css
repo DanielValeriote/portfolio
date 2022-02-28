@@ -357,8 +357,8 @@ a {
 }
 
 .card-item:hover {
-  -webkit-transform: scale(1.02) translateY(-10px);
-          transform: scale(1.02) translateY(-10px);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
   -webkit-transition-duration: .4s;
           transition-duration: .4s;
 }
