@@ -154,6 +154,9 @@ a {
     justify-content: center;
     padding: 50px 0px;
     gap: 0px;
+    & .about-title {
+      font-weight: normal;
+    }
     & .float-icon-container {
       position: absolute;
       transform: translateX(-50%);

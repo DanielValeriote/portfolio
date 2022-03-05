@@ -204,6 +204,10 @@ a {
   gap: 0px;
 }
 
+.intro-section .about-pointer .about-title {
+  font-weight: normal;
+}
+
 .intro-section .about-pointer .float-icon-container {
   position: absolute;
   -webkit-transform: translateX(-50%);
