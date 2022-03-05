@@ -159,7 +159,7 @@ a {
       transform: translateX(-50%);
       left: 50%;
       & .float-icon {
-        animation:float-icon .8s cubic-bezier(.25,.46,.45,.94) infinite alternate both;
+        animation:float-icon 1s cubic-bezier(.25,.46,.45,.94) infinite alternate both;
         & polyline {
         stroke: var(--main-color);
       }
@@ -444,7 +444,7 @@ a {
 
 @keyframes float-icon{
   from {
-    transform:translateY(0);
+    transform:translateY(5px);
   }
   to{
     transform:translateY(20px);

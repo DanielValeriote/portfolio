@@ -213,8 +213,8 @@ a {
 }
 
 .intro-section .about-pointer .float-icon-container .float-icon {
-  -webkit-animation: float-icon 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
-          animation: float-icon 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
+  -webkit-animation: float-icon 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
+          animation: float-icon 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
 }
 
 .intro-section .about-pointer .float-icon-container .float-icon polyline {
@@ -597,8 +597,8 @@ a {
 
 @-webkit-keyframes float-icon {
   from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
   to {
     -webkit-transform: translateY(20px);
@@ -608,8 +608,8 @@ a {
 
 @keyframes float-icon {
   from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
   to {
     -webkit-transform: translateY(20px);
