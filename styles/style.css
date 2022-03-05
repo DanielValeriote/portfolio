@@ -315,8 +315,8 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.534);
   border-radius: 15px;
   background-color: var(--card-bg-color);
-  -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.842);
-          box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.842);
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.542);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.542);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,8 +365,8 @@ a {
 
 .card-item:hover::before {
   opacity: 0;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
 }
 
 .card-item:hover .card-info {
@@ -384,14 +384,14 @@ a {
 
 .detailed-card::before {
   content: "";
-  background-color: var(--contrast-color);
+  background-color: rgba(var(--contrast-color), 0.5);
   position: absolute;
   right: 0;
   top: 0;
   background-color: transparent;
   border: 15px solid;
-  border-right-color: rgba(255, 255, 255, 0.5);
-  border-top-color: rgba(255, 255, 255, 0.5);
+  border-right-color: rgba(var(--contrast-color), 1);
+  border-top-color: rgba(var(--contrast-color), 1);
   border-bottom-color: transparent;
   border-left-color: transparent;
 }
