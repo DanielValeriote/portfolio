@@ -562,6 +562,8 @@ a {
 
 .dropdown-link:hover {
   background-color: var(--dropdown-hover-color);
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-link a {
