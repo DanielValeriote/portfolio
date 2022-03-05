@@ -480,8 +480,8 @@ a {
 .project-link {
   width: 23px;
   height: 23px;
-  background-color: white;
-  border: 1px solid black;
+  background-color: #19191950;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   right: 5px;
   top: 5px;
@@ -489,6 +489,7 @@ a {
 
 .project-link::before {
   content: "🔗";
+  font-size: 1.1rem;
 }
 
 .contact-section {
