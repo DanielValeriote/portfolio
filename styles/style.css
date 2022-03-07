@@ -63,17 +63,6 @@ a {
   font-size: 1.5rem;
 }
 
-.center-checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
-  display: none;
-}
-
 #nightModeSwitch {
   width: 60px;
   height: 30px;
@@ -615,6 +604,20 @@ a {
 
 .hidden {
   display: none;
+}
+
+.init-hidden {
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.onscroll-animate {
+  opacity: 1;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 @-webkit-keyframes raise {
