@@ -537,6 +537,15 @@ a {
   margin-top: 10px;
 }
 
+.contact-section .contact-links svg {
+  fill: var(--contrast-color);
+  opacity: 80%;
+}
+
+.contact-section .contact-links svg:hover {
+  opacity: 100%;
+}
+
 #github-icon {
   fill: white;
 }

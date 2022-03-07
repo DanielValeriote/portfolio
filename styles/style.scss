@@ -394,6 +394,13 @@ a {
   }
   .contact-links {
     margin-top: 10px;
+    & svg {
+      fill: var(--contrast-color);
+      opacity: 80%;
+    }
+    & svg:hover {
+      opacity: 100%;
+    }
   }
 }
 
