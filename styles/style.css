@@ -533,7 +533,7 @@ a {
   cursor: pointer;
 }
 
-.contact-section svg {
+.contact-section .contact-links {
   margin-top: 10px;
 }
 
