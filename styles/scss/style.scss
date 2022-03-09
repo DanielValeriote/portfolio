@@ -1,0 +1,116 @@
+@import "./abstract/mixins/mixins", "./abstract/animations", "./components/dropdown";
+@import "./layout/footer", "./layout/header"; 
+@import "./sections/intro", "./sections/technologies", "./sections/projects", "./sections/about";
+
+:root {
+  --bg-color: #001523;
+  --main-color: #ffffff;
+  --third-color: rgb(221, 221, 221);
+  --fourth-color: rgb(255, 174, 0);
+  --main-bg-color: #002945;
+  --highlited-color: #3daffc;
+  --card-bg-color: #004370;
+  --dropdown-bg-color: #015186;
+  --dropdown-hover-color: #003e68;
+  --contrast-color: white;
+  --footer-bg-color: #004370;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 400vh;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.underline {
+  @include underline();
+}
+
+.orange-underline {
+  @include underline($color: var(--fourth-color), $width: 40%);
+}
+
+.main-section {
+  font-family: 'Outfit';
+  & h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--highlited-color);
+  }
+}
+
+.highlited-2 {
+  color: cyan;
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+.init-hidden {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.onscroll-animate {
+  opacity: 1;
+  transition-duration: .6s;
+  transform: translateY(0px);
+}
+
+@media screen and (min-width: 545px) {
+    .about-section {
+      padding: 0px 20%;
+    }
+    .project-image-container {
+      max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 14px;
+  }
+  .nav-item {
+    display: none;
+  }
+  .shortcut-item {
+    display: block;
+    position: relative;
+    font-size: 1.4rem;
+    width: 100%;
+    height: 100%;
+    & #dropdown-btn {
+      color: inherit;
+      background-color: inherit;
+      border: none;
+      font-size: inherit;
+      cursor: pointer;
+      position: relative;
+      overflow: visible;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.shortcut-item {
+  display: none;
+}
+
+#dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  background-color: var(--dropdown-bg-color);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.432);
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  border-radius: 5px;
+  color: white;
+  animation: slide-down .4s forwards;
+  z-index: 3;
+  overflow: hidden;
+}
+
+#dropdown-nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1fr, 3);
+  align-items: stretch;
+  height: 100%;
+}
+
+.dropdown-link {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  &:hover {
+    background-color: var(--dropdown-hover-color);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+  & a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-self: center;
+  }
+}

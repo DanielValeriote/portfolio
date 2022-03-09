@@ -1,0 +1,64 @@
+.header-undeline {
+  @include underline($width: 250px)
+}
+
+.site-header {
+  padding: 22px;
+  font-family: 'Outfit';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  text-transform: uppercase;
+  color: var(--highlited-color);
+}
+
+// .center-checkbox {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+//   display: none;
+// }
+
+// #nightModeSwitch {
+//   width: 60px;
+//   height: 30px;
+//   appearance: none;
+//   background-color: dimgray;
+//   outline: none;
+//   border-radius: 12px;
+//   transition: .5s;
+//   box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+//   position: relative;
+
+//   &:hover {
+//     cursor: pointer;
+//   }
+//   &:checked {
+//     background-color: var(--highlited-color);
+//     &:before {
+//       left: 30px;
+//       background-color: yellow;
+//       box-shadow: 0px 0px 4px yellow;
+//     }
+//   }
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 30px;
+//     height: 30px;
+//     border-radius: 50%;
+//     background-color: #c6c6c6;
+//     transition: .5s;
+//     transform: scale(1.1);
+//     box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+//   }
+// }

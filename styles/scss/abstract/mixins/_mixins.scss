@@ -1,0 +1,8 @@
+@mixin underline($color: var(--highlited-color), $width: 100px) {
+  display: block;
+  width: $width;
+  background: $color;
+  height: 4px;
+  margin: 10px auto;
+  border-radius: 4px;
+}

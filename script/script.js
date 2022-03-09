@@ -7,7 +7,6 @@ const dropdownToggle = () => dropdown.classList.toggle("hidden");
 
 const initHiddenElements = document.querySelectorAll(".init-hidden")
 
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
       if (entry.isIntersecting) {
