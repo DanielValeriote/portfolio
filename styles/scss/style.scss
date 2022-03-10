@@ -1,4 +1,4 @@
-@import "./abstract/mixins/mixins", "./abstract/animations", "./components/dropdown";
+@import "./abstract/animations", "./abstract/mixins/mixins", "./components/dropdown";
 @import "./layout/footer", "./layout/header"; 
 @import "./sections/intro", "./sections/technologies", "./sections/projects", "./sections/about";
 
@@ -96,6 +96,10 @@ a {
   }
   .nav-item {
     display: none;
+  }
+  .nav-icons {
+    display: flex;
+    margin-left: auto;
   }
   .shortcut-item {
     display: block;

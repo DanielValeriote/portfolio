@@ -28,7 +28,7 @@
     font-weight: 500;
     font-size: 1.3rem;
     color: var(--third-color);
-    text-shadow: 0px 0px 3px var(--third-color);
+    text-shadow: 0px 0px 2px var(--third-color);
     letter-spacing: 3px;
     text-transform: uppercase;
   }
@@ -42,6 +42,7 @@
     gap: 0px;
     & .about-title {
       font-weight: normal;
+      text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.671);
     }
     & .float-icon-container {
       position: absolute;

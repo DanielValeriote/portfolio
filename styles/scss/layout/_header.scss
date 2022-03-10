@@ -13,10 +13,22 @@
 .nav-links {
   display: flex;
   flex-direction: row;
+  flex-grow: 1;
   list-style: none;
   gap: 20px;
   text-transform: uppercase;
   color: var(--highlited-color);
+  align-content: center;
+}
+
+.nav-item, .nav-item path, .nav-item svg {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icons {
+  margin-left: auto;
+  display: flex;
 }
 
 // .center-checkbox {
