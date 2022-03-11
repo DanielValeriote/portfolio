@@ -115,6 +115,9 @@ a {
       cursor: pointer;
       position: relative;
       overflow: visible;
+      &:hover {
+        opacity: .8;
+      }
     }
   }
 }

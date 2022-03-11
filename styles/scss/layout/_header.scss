@@ -21,9 +21,13 @@
   align-content: center;
 }
 
-.nav-item, .nav-item path, .nav-item svg {
+.nav-item, .nav-item :is(path, svg) {
   display: flex;
   align-items: center;
+}
+
+.nav-item :is(a, svg):hover {
+  opacity: .8;
 }
 
 .nav-icons {
