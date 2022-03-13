@@ -1,3 +1,4 @@
+@use "./abstract/variables" as *; 
 @use "./abstract/animations" as *; 
 @use "./abstract/mixins/mixins" as *;
 @use "./components/dropdown" as *;
@@ -7,20 +8,6 @@
 @use "./sections/technologies" as *;
 @use "./sections/projects" as *;
 @use "./sections/about" as *;
-
-
-:root {
-  --bg-color: #001523;
-  --main-color: #ffffff;
-  --third-color: rgb(221, 221, 221);
-  --fourth-color: rgb(255, 174, 0);
-  --highlited-color: #3daffc;
-  --card-bg-color: #004370;
-  --dropdown-bg-color: #015186;
-  --dropdown-hover-color: #003e68;
-  --contrast-color: white;
-  --footer-bg-color: #004370;
-}
 
 html {
   scroll-behavior: smooth;
