@@ -1,13 +1,19 @@
-@import "./abstract/animations", "./abstract/mixins/mixins", "./components/dropdown";
-@import "./layout/footer", "./layout/header"; 
-@import "./sections/intro", "./sections/technologies", "./sections/projects", "./sections/about";
+@use "./abstract/animations" as *; 
+@use "./abstract/mixins/mixins" as *;
+@use "./components/dropdown" as *;
+@use "./layout/footer" as *;
+@use "./layout/header" as *;
+@use "./sections/intro" as *;
+@use "./sections/technologies" as *;
+@use "./sections/projects" as *;
+@use "./sections/about" as *;
+
 
 :root {
   --bg-color: #001523;
   --main-color: #ffffff;
   --third-color: rgb(221, 221, 221);
   --fourth-color: rgb(255, 174, 0);
-  --main-bg-color: #002945;
   --highlited-color: #3daffc;
   --card-bg-color: #004370;
   --dropdown-bg-color: #015186;
