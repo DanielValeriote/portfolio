@@ -1,4 +1,6 @@
-@mixin underline($color: var(--highlited-color), $width: 100px) {
+@use "../variables" as *; 
+
+@mixin underline($color: $highlited-color, $width: 100px) {
   display: block;
   width: $width;
   background: $color;

@@ -1,5 +1,7 @@
+@use "../abstract/variables" as *; 
+
 .contact-section {
-  background-color: var(--footer-bg-color);
+  background-color: $footer-bg-color;
   text-align: center;
   font-size: 1.1rem;
   padding: 10px;
@@ -13,7 +15,7 @@
   .contact-links {
     margin-top: 10px;
     & svg {
-      fill: var(--contrast-color);
+      fill: $contrast-color;
       opacity: 80%;
     }
     & svg:hover {

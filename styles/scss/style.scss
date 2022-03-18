@@ -22,8 +22,8 @@ html {
 body {
   width: 100%;
   min-height: 400vh;
-  background-color: var(--bg-color);
-  color: var(--main-color);
+  background-color: $bg-color;
+  color: $main-color;
 }
 
 a {
@@ -41,7 +41,7 @@ a {
 }
 
 .orange-underline {
-  @include underline($color: var(--fourth-color), $width: 40%);
+  @include underline($color: $fourth-color, $width: 40%);
 }
 
 .main-section {
@@ -50,7 +50,7 @@ a {
     font-size: 2rem;
     text-align: center;
     font-weight: lighter;
-    color: var(--highlited-color);
+    color: $highlited-color;
   }
 }
 
