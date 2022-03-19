@@ -50,6 +50,18 @@ a {
   }
 }
 
+.about-section {
+  grid-area: about;
+}
+
+.technologies-section {
+  grid-area: technologies;
+}
+
+.projects-section {
+  grid-area: projects;
+}
+
 .highlited-2 {
   color: cyan;
   text-decoration: underline;
@@ -108,5 +120,24 @@ a {
         opacity: .8;
       }
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    display: grid;
+    grid-template: 
+    "about technologies" 100vh
+    "projects projects" auto
+    /1fr 1fr;
+    align-items: center;
+    min-height: 0;
+  }
+  .technologies-list {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .technologies-section {
+    padding: 0;
   }
 }
