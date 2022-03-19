@@ -10,81 +10,67 @@
 }
 
 .technologies-list {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 22px;
   padding: 20px;
-  justify-content: center;
-  margin-bottom: 60px;    
+  justify-content: center;    
   & > * {
     flex: 1 1 320px;
   }
-  list-style: none;
+  margin: 120px 0px;
 }
 
-.card-item {
+.tech-card-item {
+  display: grid;
+  grid-template: 
+  "img title" 38px
+  "img info" 38px
+  / 76px auto;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  max-width: 280px;
+  background-color: #1e1e1e;
+  align-content:center;
   position: relative;
-  min-width: 200px;
-  max-width: 80px;
-  border: 1px solid rgba(0, 0, 0, 0.534);
-  border-radius: 15px;
-  background-color: $card-bg-color;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.542);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-weight: lighter;
-  & .image-container {
-    height: 100%;
-  }
-  & .image-container img {
-    padding: 20px 10%;
-    max-width: 100%;
-    height: 100%;
-  }
-  & .card-title {
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.432);
-    border-top: 1px solid rgba(0, 0, 0, 0.342);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
-    padding: 10px 0;
-  }
-  & .card-info {
-    display: none;
-  }
-  &:hover {
-    transform: translateY(-10px);
-    transition-duration: .4s;
-  &::before {
-      opacity: 0;
-      transition-duration: .15s;
-    }
-    & .card-info {
-      display: block;
-      position: absolute;
-      top: 0;
-      background-color: $card-info-bg;
-      width: 100%;
-      height: 20px;
-      animation: raise .1s forwards;
-      border-radius: 10px 10px 0px 0px;
-      text-align: center;
-    }
-  }
+  align-items: center;
+  letter-spacing: 1.5px;
+  column-gap: 35px;
 }
 
-.detailed-card::before {
-    content: "";
-    background-color: white;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: transparent;
-    border: 15px solid;
-    border-right-color: $contrast-color;
-    border-top-color: $contrast-color;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
+.tech-card-img {
+  grid-area: img;
+  background-color: transparent;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+}
+
+.tech-card-title {
+  grid-area: title;
+}
+
+.tech-card-info {
+  grid-area: info;
+}
+
+.html-item {
+  border: 2px solid orange;
+}
+
+.css-item {
+  border: 2px solid #3595cf;
+}
+
+.react-item {
+  border: 2px solid rgb(0, 139, 194);
+}
+
+.sass-item {
+  border: 2px solid #cc6699;
+}
+
+.typescript-item {
+  border: 2px solid #2f74c0;
 }
