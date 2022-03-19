@@ -41,7 +41,7 @@ a {
 }
 
 .orange-underline {
-  @include underline($color: $fourth-color, $width: 40%);
+  @include underline($color: $fourth-color);
 }
 
 .main-section {
