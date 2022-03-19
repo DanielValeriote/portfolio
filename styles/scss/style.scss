@@ -17,7 +17,7 @@
 
 body {
   width: 100%;
-  min-height: 400vh;
+  min-height: 100vh;
   background-color: $bg-color;
   color: $main-color;
 }
@@ -94,6 +94,9 @@ a {
 @media screen and (max-width: 530px) {
   html {
     font-size: 14px;
+  }
+  .about-section {
+    padding: 0px 20px;
   }
   .nav-item {
     display: none;
