@@ -2,11 +2,6 @@
 
 .technologies-section {
   padding-top: 20px;
-  & h2 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 0px 5px;
-  }
 }
 
 .technologies-list {
@@ -37,6 +32,11 @@
   align-items: center;
   letter-spacing: 1.5px;
   column-gap: 35px;
+}
+
+.tech-card-item:hover {
+  transform: scale(1.02);
+  transition-duration: .3s;
 }
 
 .tech-card-img {
