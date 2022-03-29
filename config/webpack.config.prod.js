@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "../dist"),
     filename: "bundle.js",
-    assetModuleFilename: "images/[name].[ext]",
+    assetModuleFilename: "images/[name][ext]",
   },
   plugins: [
     new MiniCssExtract(),
