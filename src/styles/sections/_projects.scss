@@ -73,6 +73,7 @@
     transform: scale(1.05);
   }
   &::before {
-    content: url(../../images/link.svg);
+    font-size: inherit;
+    content: url(../../img/link.svg);
   } 
 }
