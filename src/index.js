@@ -2,11 +2,10 @@ import "./styles/style.scss";
 
 const dropdown = document.getElementById("dropdown");
 const dropdownBtn = document.getElementById("dropdown-btn");
-dropdownBtn.onclick(dropdownToggle)
-window.onclick = e => {if (e.target !== dropdownBtn) dropdown.classList.add("hidden")};
 const dropdownToggle = _ => dropdown.classList.toggle("hidden");
-
-const initHiddenEls = document.querySelectorAll(".init-hidden")
+dropdownBtn.addEventListener("click", dropdownToggle);
+window.onclick = e => {if (e.target !== dropdownBtn) dropdown.classList.add("hidden")};
+const initHiddenEls = document.querySelectorAll(".init-hidden");
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
       if (entry.isIntersecting) {
