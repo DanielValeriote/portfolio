@@ -1,11 +1,15 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "homepage": "https://danielvaleriote.github.io/portfolio",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "npx webpack serve --hot --open --config ./config/webpack.config.dev",
-    "build": "npx webpack --config ./config/webpack.config.prod"
+    "prebuild": "rimraf dist",
+    "build": "npx webpack --config ./config/webpack.config.prod",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -17,14 +21,15 @@
   "bugs": {
     "url": "https://github.com/DanielValeriote/portfolio/issues"
   },
-  "homepage": "https://github.com/DanielValeriote/portfolio#readme",
   "devDependencies": {
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
     "resolve-url-loader": "^5.0.0",
+    "rimraf": "^3.0.2",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
     "webpack": "^5.70.0",
