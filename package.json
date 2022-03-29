@@ -4,6 +4,11 @@
   "homepage": "https://danielvaleriote.github.io/portfolio",
   "description": "",
   "main": "index.js",
+  "browserslist": [
+    
+    "> 1%",
+    "ie > 9"
+  ],
   "scripts": {
     "start": "npx webpack serve --hot --open --config ./config/webpack.config.dev",
     "prebuild": "rimraf dist",
@@ -22,12 +27,15 @@
     "url": "https://github.com/DanielValeriote/portfolio/issues"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.4",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "gh-pages": "^3.2.3",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
+    "postcss": "^8.4.12",
+    "postcss-loader": "^6.2.1",
     "resolve-url-loader": "^5.0.0",
     "rimraf": "^3.0.2",
     "sass": "^1.49.9",
