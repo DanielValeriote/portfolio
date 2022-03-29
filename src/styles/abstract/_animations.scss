@@ -1,0 +1,28 @@
+@keyframes raise {
+  from {
+    top: 0;
+  }
+  to {
+    top: -10px;
+  }
+}
+
+@keyframes float-icon{
+  from {
+    transform:translateY(5px);
+  }
+  to{
+    transform:translateY(20px);
+  }
+}
+
+@keyframes slide-down{
+  from {
+    top: 20%;
+    opacity: 0%;
+  }
+  to{
+    top: 100%;
+    opacity: 100%;
+  }
+} 
