@@ -1,0 +1,39 @@
+@use "../abstract/mixins/mixins" as *;
+@use "../abstract/variables" as *; 
+
+.header-undeline {
+  @include underline($width: 250px)
+}
+
+.site-header {
+  padding: 22px;
+  font-family: 'Outfit';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  list-style: none;
+  gap: 20px;
+  text-transform: uppercase;
+  color: $highlited-color;
+  align-content: center;
+}
+
+.nav-item, .nav-item :is(path, svg) {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item :is(a, svg):hover {
+  opacity: .8;
+}
+
+.nav-icons {
+  margin-left: auto;
+  display: flex;
+}
