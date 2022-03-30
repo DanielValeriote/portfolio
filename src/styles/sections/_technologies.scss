@@ -56,25 +56,33 @@
 }
 
 .html-item {
-  border: 2px solid orange;
+  border-color: orange;
 }
 
 .css-item {
-  border: 2px solid #3595cf;
+  border-color: #3595cf;
 }
 
 .react-item {
-  border: 2px solid rgb(0, 139, 194);
+  border-color: rgb(0, 139, 194);
 }
 
 .sass-item {
-  border: 2px solid #cc6699;
+  border-color: #cc6699;
 }
 
 .typescript-item {
-  border: 2px solid #2f74c0;
+  border-color: #2f74c0;
 }
 
 .bootstrap-item {
-  border: 2px solid #5e3b7f;
+  border-color: #5e3b7f;
+}
+
+.webpack-item {
+  border-color: #81d4fa;
+}
+
+.webpack-item img {
+  transform: scale(1.2);
 }
