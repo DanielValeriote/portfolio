@@ -10,27 +10,26 @@
   height: 95vh;
   background-color: $bg-color;
   background-image: url("../../img/main-image.jpg");
-  background-position: center center;
+  background-position: left center;
   background-size: cover;
   background-attachment: fixed;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
   padding: 30px;
   padding-top: 30px;
   & .intro-h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: bolder;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   }
-
   & .intro-h1, .intro-h2 {
     text-align: center;
     margin: 10px;
   }
   & .intro-h2 {
-    font-weight: 500;
-    font-size: 1.3rem;
+    font-weight: 600;
+    font-size: 1.15rem;
     color: $third-color;
-    text-shadow: 0px 0px 2px $third-color;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
     letter-spacing: 3px;
     text-transform: uppercase;
   }
