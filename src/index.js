@@ -7,9 +7,7 @@ const dropdownBtn = document.getElementById("dropdown-btn");
 
 const dropdownToggle = _ => {
   dropdown.classList.toggle("hidden");
-  dropdown.ariaExpanded = dropdown.ariaExpanded == "true" ? "false" : "true"
-  
-  console.log(dropdown.ariaExpanded)
+  dropdown.ariaExpanded = dropdown.ariaExpanded == "true" ? "false" : "true";
 } 
 
 dropdownBtn.addEventListener("click", dropdownToggle);

@@ -18,20 +18,18 @@
 }
 
 .tech-card-item {
-  display: grid;
-  grid-template: 
-  "img title" 38px
-  "img info" 38px
-  / 76px auto;
-  border: 2px solid yellow;
-  border-radius: 5px;
-  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid $highlited-color;
+  border-radius: 3px;
+  max-width: 195px;
+  min-height: 140px;
   background-color: #1e1e1e;
-  align-content:center;
-  position: relative;
+  padding: 5px;
   align-items: center;
-  letter-spacing: 1.5px;
-  column-gap: 35px;
+  justify-content: center;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
 }
 
 .tech-card-item:hover {
@@ -39,46 +37,14 @@
   transition-duration: .3s;
 }
 
-.tech-card-img {
-  grid-area: img;
-  background-color: transparent;
-  position: absolute;
-  top: -20px;
-  left: -10px;
-}
-
 .tech-card-title {
-  grid-area: title;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
 }
 
-.tech-card-info {
-  grid-area: info;
-}
-
-.html-item {
-  border-color: orange;
-}
-
-.css-item {
-  border-color: #3595cf;
-}
-
-.react-item {
-  border-color: rgb(0, 139, 194);
-}
-
-.sass-item {
-  border-color: #cc6699;
-}
-
-.typescript-item {
-  border-color: #2f74c0;
-}
-
-.bootstrap-item {
-  border-color: #5e3b7f;
-}
-
-.next-item {
-  border-color: #fff;
+.tech-card-img {
+  width: 64px;
+  height: 64px;
 }
